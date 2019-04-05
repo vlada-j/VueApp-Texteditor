@@ -3,5 +3,6 @@ module.exports = {
 	assetsDir: '',
 	lintOnSave: false,
 	filenameHashing: false,
-	runtimeCompiler: false
+	runtimeCompiler: false,
+	productionSourceMap: false
 };

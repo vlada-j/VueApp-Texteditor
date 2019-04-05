@@ -1,11 +1,12 @@
 {
-  "name": "VueAdmin",
+  "name": "vue-admin",
   "version": "0.0.0",
   "author": "",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "start": "npm run server | npm run serve",
+    "serve": "vue-cli-service serve --port 4444",
     "build": "vue-cli-service build",
-    "server": "json-server-relationship --watch DummyServer/db.json --routes DummyServer/routes.json"
+    "server": "json-server-relationship --watch DummyServer/db.json --routes DummyServer/routes.json --port 3333"
   },
   "dependencies": {
     "vue": "^2.6.10",
