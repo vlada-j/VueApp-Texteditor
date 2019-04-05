@@ -12,8 +12,8 @@ auth.setLoguotRedirect( { name: 'login' } );
 export default new Router({
 	mode: 'history',
 	base: process.env.BASE_URL,
-	// linkActiveClass: 'active',
 	routes: [
+
 		// Public module
 		{
 			path: '/login',
@@ -35,7 +35,7 @@ export default new Router({
 				{
 					path: '',
 					name: 'dashboard',
-			//		component: () => import(/* webpackChunkName: "dashboard" */ './Dashboard/TheDashboard.vue'),
+					component: () => import(/* webpackChunkName: "dashboard" */ './Dashboard/TheDashboard.vue'),
 				}
 			]
 		},
