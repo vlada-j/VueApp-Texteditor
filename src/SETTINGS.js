@@ -8,4 +8,6 @@ export default {
 	DATE_FORMAT_FULL: 'DD. MM. YYYY. HH:mm',
 
 	DEFAULT_AVATAR: '/assets/img/user.jpg',
+
+	NAVIGATION: []
 };

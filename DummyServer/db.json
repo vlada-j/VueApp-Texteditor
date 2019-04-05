@@ -1,3 +1,4 @@
 {
-	"users": [{"id":1}, {"id":11}]
+	"users": [{"id":1}, {"id":11}],
+	"users-login": [{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE1NTQ1MDAyMTUsImV4cCI6MTU1NDU4NjYxNSwiZGF0YSI6eyJpZCI6NSwidXNlcm5hbWUiOiJzdXBlcmFkbWluMTEiLCJyZW1lbWJlck1lIjpmYWxzZSwidHlwZSI6MTgwLCJzdGF0dXMiOjF9fQ.Pt1S0iJ19V_o5OKkEVDou1OnGRcd-Dd-nlIvWzSEdnY"}]
 }

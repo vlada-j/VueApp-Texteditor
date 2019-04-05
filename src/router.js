@@ -1,8 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import auth from './shared/auth'
+import ThePageNotFound from './appComponents/ThePageNotFound.vue'
 
 
 Vue.use(Router);
+
+auth.setLoguotRedirect( { name: 'login' } );
 
 
 export default new Router({
@@ -22,11 +26,11 @@ export default new Router({
 			component: () => import(/* webpackChunkName: "public" */ './Public/TheRegistration.vue'),
 		},
 
-		// Loged modules
+		// Logged modules
 		{
 			path: '/',
-		//	beforeEnter: auth.authGard,
-	//		component: AppLayout,
+//			beforeEnter: auth.authGard,
+			component: () => import(/* webpackChunkName: "app-layout" */ './appComponents/AppLayout.vue'),
 			children: [
 				{
 					path: '',
@@ -35,5 +39,7 @@ export default new Router({
 				}
 			]
 		},
+
+		{ path: "*", component: ThePageNotFound }
 	]
 });
