@@ -1,5 +1,5 @@
 /* *********************************************************************************************** *
- * Authorization service
+ * AUTHORIZATION SERVICE
  * =============================================================================================== *
  * Kompletan logika za autorizaciju - token, user, status logovanja, auth gard
  * *********************************************************************************************** */
@@ -9,7 +9,7 @@ let token = false;
 let expiresAt = false;
 let userData = false;
 
-let loguotRedirect = {};
+let logoutRedirect = {};
 
 
 export default {
@@ -21,7 +21,7 @@ export default {
 	decrypt,
 	isAuthenticated,
 	authGard,
-	setLoguotRedirect,
+	setLogoutRedirect,
 	logout,
 	handleLoginRequest
 };
@@ -117,7 +117,7 @@ function authGard(to, from, next) {
 	if ( to.name === 'callback' || isAuthenticated() ) { next(); }
 	else {
 		logout();
-		next( loguotRedirect );
+		next( logoutRedirect );
 	}
 }
 
@@ -125,8 +125,8 @@ function authGard(to, from, next) {
 //--------------------------------------------------------------------------------------------------
 
 
-function setLoguotRedirect(component) {
-	loguotRedirect = component
+function setLogoutRedirect(component) {
+	logoutRedirect = component
 }
 
 

@@ -6,7 +6,7 @@ import ThePageNotFound from './appComponents/ThePageNotFound.vue'
 
 Vue.use(Router);
 
-auth.setLoguotRedirect( { name: 'login' } );
+auth.setLogoutRedirect( { name: 'login' } );
 
 
 export default new Router({
