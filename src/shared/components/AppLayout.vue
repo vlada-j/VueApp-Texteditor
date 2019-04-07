@@ -51,4 +51,13 @@ export default {
 <!-- =========================================================================================== -->
 
 
-<style scoped></style>
+<style scoped>
+.page-wrapper {
+	top:50px;
+	left:200px;
+	right:0;
+	bottom:0;
+	padding:10px;
+	position:absolute;
+}
+</style>

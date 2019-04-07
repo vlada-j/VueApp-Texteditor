@@ -7,7 +7,7 @@ export default {
 
 	DATE_FORMAT_FULL: 'DD. MM. YYYY. HH:mm',
 
-	DEFAULT_AVATAR: '/assets/img/user.jpg',
+	DEFAULT_AVATAR: '/assets/avatar.jpg',
 
 	NAVIGATION: []
 };
