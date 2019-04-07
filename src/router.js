@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import auth from './shared/auth'
-import ThePageNotFound from './appComponents/ThePageNotFound.vue'
+import ThePageNotFound from './shared/components/ThePageNotFound.vue'
 
 
 Vue.use(Router);
@@ -30,7 +30,7 @@ export default new Router({
 		{
 			path: '/',
 //			beforeEnter: auth.authGard,
-			component: () => import(/* webpackChunkName: "app-layout" */ './appComponents/AppLayout.vue'),
+			component: () => import(/* webpackChunkName: "app-layout" */ './shared/components/AppLayout.vue'),
 			children: [
 				{
 					path: '',

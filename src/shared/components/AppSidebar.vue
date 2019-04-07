@@ -1,5 +1,5 @@
 <script>
-import SETTINGS from '../SETTINGS';
+import SETTINGS from '../../SETTINGS';
 
 export default {
 	name: 'AppSidebar',
