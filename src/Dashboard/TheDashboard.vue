@@ -1,6 +1,7 @@
 <script>
 import EditorDemoSimple from '../TextEditor/EditorDemoSimple';
 import EditorDemoImage from '../TextEditor/EditorDemoImage';
+import EditorDemoTags from '../TextEditor/EditorDemoTags';
 
 export default {
 	name: 'TheDashboard',
@@ -8,12 +9,14 @@ export default {
 	components: {
 		EditorDemoSimple,
 		EditorDemoImage,
+		EditorDemoTags,
 	},
 
 	data() {
 		return {
 			content1: '<h1>Neki defaultni tekst</h1><p>Lore <strong>ipsum</strong>...</p><p>Bla bal truc ...</p>',
 			content2: '<p>Ubaci neku sliku ovde </p>',
+			content3: '<p>TAG TAG TAG</p>',
 		}
 	},
 
@@ -41,6 +44,9 @@ export default {
 
 		<h3>Demo editora sa uploadom slike</h3>
 		<editor-demo-image v-model="content2" />
+
+		<h3>Demo editora sa tagovima</h3>
+		<editor-demo-tags v-model="content3" />
 	</section>
 </template>
 
